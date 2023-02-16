@@ -1,18 +1,3 @@
-/*=========================================================
-BACCARAT - Casino Number Game
-Third project by KEVIN VILLANIA
-villaniakevin07@gmail.com
-
-Player chooses between two sides either
-'banker' or 'player'. After drawing two cards the one
-who has the nearest number to 9 wins.
-
-Whenever sum overboards to 9, 1 card will be drawn
-from the deck. However if at the first two draw
-results a sum of 8 and 9, the dealer won't draw
-additional card anymore.
-
-===========================================================*/
 
 #include <iostream>
 #include <ctime>
@@ -27,14 +12,14 @@ struct Number{
 void printCard1(int num1,int num2, int num3, int sum);
 void printCard2(int num1,int num2, int sum);
 bool playAgain(char x,int money);
-int winnerFunction(int bankerCard, int playerCard); //compares two cards
-int declareWinner(int winner, int decision, int bet); //checks if user win or lose
+int winnerFunction(int bankerCard, int playerCard); 
+int declareWinner(int winner, int decision, int bet); 
 
 
 int main(){
 
-    system ("Color 2F"); //CLI color changer
-    srand(time(NULL)); //random number initialization
+    system ("Color 2F"); 
+    srand(time(NULL)); 
 
     //variable declaration
     std::string name;
